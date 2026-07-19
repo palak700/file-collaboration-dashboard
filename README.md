@@ -1,116 +1,95 @@
 # 📁 File Collaboration Dashboard
 
-A full-stack File Collaboration Dashboard that enables secure file sharing, role-based access control, data visualization, and AI-powered analytics. The project consists of a React frontend, FastAPI backend, Android application, and Face Recognition Service.
+A full-stack File Collaboration Dashboard that enables secure file management, role-based access control, and data visualization. The application allows users to upload, organize, and analyze files through an intuitive web interface while administrators manage users and permissions.
+
+---
 
 ## 🚀 Features
 
 ### 🔐 Authentication & Authorization
-- JWT-based authentication
+- Secure JWT Authentication
 - Role-Based Access Control (RBAC)
-- Multiple user roles:
-  - Admin
-  - Manager
-  - Employee
-  - Viewer
+- Admin and User modules
+- Protected API routes
 
 ### 📂 File Management
-- Upload files securely
+- Upload files
 - Download files
-- View uploaded files
-- Edit file details
+- View file details
+- Edit file information
 - Delete files
-- Support for:
-  - CSV
-  - Excel (.xlsx)
-  - LibreOffice files
-  - ZIP files
+
+### 📄 Supported File Types
+- CSV
+- Excel (.xlsx)
+- LibreOffice files
+- ZIP files
 
 ### 📊 Data Visualization
-- Automatic dataset analysis
-- Interactive charts
-- Scatter Plot visualization
-- Data statistics
-- Machine Learning visualization
+- Automatic data analysis
+- Interactive scatter plots
+- Dataset visualization
+- Statistical insights
 
 ### 🤖 Machine Learning Integration
 - K-Means Clustering
 - K-Nearest Neighbors (KNN)
-- Dataset preprocessing
-- Visual cluster analysis
+- Visual representation of clustered data
 
-### 👤 Face Recognition Attendance
-- Android application
-- Face verification
-- Attendance marking
-- GPS-based location verification
-
-### 📱 Android Application
-- User login
-- Attendance marking
-- Camera integration
-- Location services
-- Secure API communication
-
-### 🖥️ Admin Dashboard
+### 👨‍💼 Admin Dashboard
 - User Management
 - File Management
-- Analytics Dashboard
-- Attendance Monitoring
-- Machine Learning Reports
+- Dataset Analytics
+- Access Control
 
 ---
 
 # 🛠️ Tech Stack
 
-## Frontend
+### Frontend
 - React.js
 - Vite
 - Bootstrap 5
 - Tailwind CSS
 - Axios
 
-## Backend
+### Backend
 - FastAPI
 - Python
 - SQLAlchemy
 - Alembic
 - JWT Authentication
 
-## Android
-- Kotlin
-- MVVM Architecture
-- CameraX
-- Retrofit
-- DataStore
+### Database
+- SQLite
+- PostgreSQL (Supported)
 
-## Database
-- PostgreSQL
-- SQLite (Development)
-
-## Machine Learning
-- Scikit-learn
+### Data Analysis & Machine Learning
 - Pandas
 - NumPy
 - Matplotlib
-
-## Face Recognition
-- InsightFace
-- OpenCV
-- FastAPI
+- Scikit-learn
 
 ---
 
 # 📁 Project Structure
 
 ```
-filecollab/
+file-collaboration-dashboard/
 │
-├── frontend/                  # React Frontend
-├── backend/                   # FastAPI Backend
-├── android-app/               # Android Application
-├── face-recognition-service/  # Face Recognition API
-├── database/                  # Database Scripts
-├── alembic/                   # Database Migrations
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── app/
+│   ├── tests/
+│   ├── uploads/
+│   └── requirements.txt
+│
+├── alembic/
+├── database/
 ├── README.md
 └── requirements.txt
 ```
@@ -123,12 +102,11 @@ filecollab/
 
 ```bash
 git clone https://github.com/palak700/file-collaboration-dashboard.git
+
 cd file-collaboration-dashboard
 ```
 
----
-
-## Backend
+## Backend Setup
 
 ```bash
 cd backend
@@ -151,7 +129,7 @@ http://localhost:8000
 
 ---
 
-## Frontend
+## Frontend Setup
 
 ```bash
 cd frontend
@@ -169,57 +147,32 @@ http://localhost:5173
 
 ---
 
+# 📊 Machine Learning Features
 
-
-# 📊 Supported File Formats
-
-- CSV
-- XLSX
-- LibreOffice Files
-- ZIP
+- K-Means Clustering for data grouping
+- K-Nearest Neighbors (KNN) visualization
+- Scatter plot generation
+- Dataset preprocessing using Pandas
 
 ---
 
-# 🔐 Security Features
+# 🔐 Security
 
 - JWT Authentication
-- Role-Based Access Control
-- Secure File Upload
-- Protected APIs
-- Password Encryption
+- Role-Based Authorization
+- Secure API endpoints
+- Protected file access
 
 ---
 
-# 📈 Machine Learning Features
+# 📌 Future Improvements
 
-- K-Means Clustering
-- KNN Classification
-- Data Visualization
-- Statistical Analysis
-
----
-
-# 📱 Modules
-
-- Authentication
-- User Management
-- File Management
-- Attendance Management
-- Face Recognition
-- Analytics Dashboard
-- Machine Learning
-
----
-
-# Future Enhancements
-
-- AI-powered document analysis
-- OCR support
-- Cloud storage integration
-- Email notifications
-- Real-time collaboration
-- Audit logs
+- Drag-and-drop file upload
+- Real-time notifications
 - Advanced analytics dashboard
+- File version history
+- Search and filtering
+- Cloud storage integration
 
 ---
 
@@ -229,12 +182,8 @@ http://localhost:5173
 
 B.Tech Computer Science Engineering
 
-Interested in Full Stack Development, AI/ML, and Mobile Application Development.
-
-GitHub: https://github.com/palak700
+**GitHub:** https://github.com/palak700
 
 ---
 
-# 📄 License
-
-This project is developed for educational and learning purposes.
+## ⭐ If you found this project helpful, consider giving it a star!
